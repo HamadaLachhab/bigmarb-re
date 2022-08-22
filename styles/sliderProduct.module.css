@@ -1,0 +1,85 @@
+.mycontainer {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../public/black-marble.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  place-content: center;
+}
+
+/* mycontainer {
+  width: 100%;
+}. */
+@media (min-width: 640px) {
+  .mycontainer {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .mycontainer {
+    max-width: 768px;
+  }
+}
+
+.cardlist {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  /* background-image: url("../public/black-marble.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  height: 450px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.maincard {
+  height: 350px;
+  width: 400px;
+  min-width: 250px;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: red;
+  box-shadow: -1rem 0 3rem rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s;
+  margin-left: 20px;
+  scroll-snap-align: start;
+  clear: both;
+  position: relative;
+  z-index: 2;
+}
+.card {
+  height: 350px;
+  width: 400px;
+  min-width: 250px;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: #17141d;
+  box-shadow: -1rem 0 3rem #000;
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s;
+  margin-left: 70px;
+  scroll-snap-align: start;
+  clear: both;
+  position: relative;
+}
+
+.card:focus-within ~ .card,
+.card:hover ~ .card {
+  transform: translateX(130px);
+}
+
+.card:hover {
+  transform: translateY(-1rem);
+  z-index: 3;
+}
+
+.card:not(:first-child) {
+  margin-left: -130px;
+}
