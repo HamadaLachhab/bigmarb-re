@@ -1,0 +1,47 @@
+@supports (display: grid) {
+  .popular_movies {
+    width: 90%;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    column-gap: 2.4rem;
+    row-gap: 2rem;
+  }
+}
+.head {
+  color: rgb(78, 78, 78);
+  font-size: medium;
+  padding-left: 10px;
+  font-weight: 400;
+}
+
+.image {
+  position: relative;
+  background-color: red;
+  height: 210px;
+  border-radius: 0.8rem;
+  max-width: 230px;
+  box-shadow: 8px 15px 50px 0px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 8px 15px 50px 0px rgba(0, 0, 0, 0.452);
+  -moz-box-shadow: 8px 15px 50px 0px rgba(0, 0, 0, 0.35);
+}
+.filter_container {
+  margin-top: 2rem;
+}
+.filter_container button {
+  margin-right: 2rem;
+  min-width: 4rem;
+  margin: 4px;
+  padding: 0.3rem 0.7rem;
+  border: none;
+  background: white;
+  color: rgb(201, 27, 27);
+  border-radius: 1rem;
+  border: 2px solid rgb(187, 24, 24);
+  font-weight: bold;
+  cursor: pointer;
+}
+button.active {
+  background: rgb(213, 21, 21);
+  color: white;
+}
