@@ -4,11 +4,13 @@ import Footer from "./Footer";
 function Layout({ children }: any) {
   return (
     <>
-      <Navbar />
       <div className={styles.container}>
-        <main className={styles.main}>{children}</main>
+        <main className={styles.main}>
+          <Navbar />
+          {children}
+          <Footer />
+        </main>
       </div>
-      <Footer />
     </>
   );
 }

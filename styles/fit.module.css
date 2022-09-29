@@ -1,0 +1,62 @@
+.wrapper {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: center;
+}
+.header {
+  max-width: 100%;
+  padding: 2rem;
+}
+.header h3 {
+  font-size: 2.6rem;
+  padding-bottom: 1rem;
+  font-weight: 500;
+  color: rgb(175, 9, 9);
+}
+.header p {
+  font-size: 1.2rem;
+  max-width: 100%;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  font-weight: 300;
+}
+.tranche1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  height: 300px;
+}
+.tranche1 div {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .tranche1 {
+    flex-direction: column;
+  }
+}
+
+.relative {
+  position: relative;
+}
+.tranche1main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.tranche1main h1 {
+  max-width: 100%;
+  width: 100%;
+  font-size: 1.7rem;
+  padding: 2rem;
+  color: rgb(192, 41, 41);
+}
+.tranche1main p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  padding-left: 1rem;
+}

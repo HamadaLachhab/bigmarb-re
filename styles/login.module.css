@@ -6,6 +6,18 @@
   background: linear-gradient(90deg, #ff9696, #ca5656);
 }
 
+.pending {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  color: #652323;
+  font-size: 2rem;
+  transform: translateY(10px);
+  transition: 2s;
+}
+
 .screen {
   background: linear-gradient(90deg, #a04444, #b32020);
   position: relative;

@@ -3,7 +3,7 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 const firebaseConfig = {
-  apiKey: "AIzaSyB3N-T9NJAARMsvqjVg7TkK7k8bwC2pxvY",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_KEY,
   authDomain: "bigmarbre-47277.firebaseapp.com",
   projectId: "bigmarbre-47277",
   storageBucket: "bigmarbre-47277.appspot.com",

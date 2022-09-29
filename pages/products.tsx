@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useRouter } from "next/router";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase";
 import pstyle from "../styles/products.module.css";
@@ -22,6 +23,8 @@ export async function getServerSideProps() {
 }
 
 function products({ product }: any) {
+  const router = useRouter();
+  const { locale, defaultLocale, locales, pathname, query, asPath } = router;
   const [filtered, setFiltered] = useState(product);
   const [active, setActive] = useState("All");
   if (!product) return <h2> no product yet </h2>;
@@ -35,7 +38,7 @@ function products({ product }: any) {
             setFiltered(product);
           }}
         >
-          All
+          {locale === "fr" ? "Tous" : "All"}
         </button>
         <button
           className={active === "marble" ? `${pstyle.active}` : ""}
@@ -47,7 +50,7 @@ function products({ product }: any) {
             setFiltered(tempfiltered);
           }}
         >
-          marblre
+          {locale === "fr" ? "Marbre" : "Marble"}
         </button>
         <button
           className={active === "granite" ? `${pstyle.active}` : ""}
@@ -60,31 +63,19 @@ function products({ product }: any) {
             setFiltered(tempfiltered);
           }}
         >
-          granite
+          {locale === "fr" ? "Granite" : "Granite"}
         </button>
         <button
-          className={active === "basalte" ? `${pstyle.active}` : ""}
+          className={active === "pierres" ? `${pstyle.active}` : ""}
           onClick={() => {
-            setActive("basalte");
+            setActive("pierres");
             const tempfiltered = product.filter(
-              (p: any) => p.type === "basalt"
+              (p: any) => p.type === "pierres"
             );
             setFiltered(tempfiltered);
           }}
         >
-          basalte
-        </button>
-        <button
-          className={active === "artwork" ? `${pstyle.active}` : ""}
-          onClick={() => {
-            setActive("artwork");
-            const tempfiltered = product.filter(
-              (p: any) => p.type === "artwork"
-            );
-            setFiltered(tempfiltered);
-          }}
-        >
-          artwork
+          {locale === "fr" ? "Pierres" : "Stones"}
         </button>
       </div>
 
@@ -110,7 +101,7 @@ function products({ product }: any) {
                   fill
                   style={{
                     objectFit: "cover",
-                    borderRadius: "0.8rem",
+                    borderRadius: "0.3rem",
                   }}
                 />
               </div>

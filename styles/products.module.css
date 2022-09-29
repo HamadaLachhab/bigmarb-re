@@ -1,11 +1,12 @@
 @supports (display: grid) {
   .popular_movies {
-    width: 90%;
-    padding: 2rem;
+    max-width: 100%;
+
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 230px));
     column-gap: 2.4rem;
     row-gap: 2rem;
+    margin: 10%;
   }
 }
 .head {
@@ -21,15 +22,23 @@
   height: 210px;
   border-radius: 0.8rem;
   max-width: 230px;
-  box-shadow: 8px 15px 50px 0px rgba(0, 0, 0, 0.35);
-  -webkit-box-shadow: 8px 15px 50px 0px rgba(0, 0, 0, 0.452);
-  -moz-box-shadow: 8px 15px 50px 0px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 26px 14px 68px -16px rgba(0, 0, 0, 0.68);
+  -moz-box-shadow: 26px 14px 68px -16px rgba(0, 0, 0, 0.68);
+  box-shadow: 26px 14px 68px -16px rgba(0, 0, 0, 0.68);
 }
 .filter_container {
   margin-top: 2rem;
+  padding-left: 6rem;
+  max-width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .filter_container {
+    padding-left: 0rem;
+  }
+}
+
 .filter_container button {
-  margin-right: 2rem;
+  margin-right: 3rem;
   min-width: 4rem;
   margin: 4px;
   padding: 0.3rem 0.7rem;

@@ -9,16 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
+    "@googlemaps/react-wrapper": "^1.1.35",
     "firebase": "^9.9.3",
     "framer-motion": "^7.2.1",
     "hamburger-react": "^2.5.0",
-    "leaflet": "^1.8.0",
     "next": "12.2.4",
     "react": "18.2.0",
     "react-countup": "^6.3.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
-    "react-leaflet": "^4.0.2",
     "react-toastify": "^9.0.8",
     "swiper": "^8.3.2"
   },
