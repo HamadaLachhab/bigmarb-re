@@ -19,6 +19,7 @@ const nextConfig = {
     defaultLocale: "fr",
     localeDetection: false,
   },
+  ignoreBuildErrors: true,
 };
 
 module.exports = nextConfig;

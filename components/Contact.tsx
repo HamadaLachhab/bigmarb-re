@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import { useRouter } from "next/router";
 function Contact() {
-  const form = useRef();
+  const form: any = useRef();
 
   const router = useRouter();
   const { locale, defaultLocale, locales, pathname, query, asPath } = router;
@@ -13,10 +13,10 @@ function Contact() {
 
     emailjs
       .sendForm(
-        process.env.NEXT_PUBLIC_SERVICE_ID,
-        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        "service_xpzy9b4",
+        "template_qrgjr94",
         form.current,
-        process.env.NEXT_PUBLIC_PUBLIC_KEY
+        "T6ffdvCL6_PEVHnrd"
       )
       .then(
         (result) => {
