@@ -30,7 +30,7 @@ export async function getServerSideProps() {
   };
 }
 
-function admindashboard({ product }: any) {
+function Admindashboard({ product }: any) {
   const router = useRouter();
 
   const { locale, defaultLocale, locales, pathname, query, asPath } = router;
@@ -201,4 +201,4 @@ function admindashboard({ product }: any) {
     );
 }
 
-export default admindashboard;
+export default Admindashboard;

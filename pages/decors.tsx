@@ -6,7 +6,7 @@ import pic3 from "../public/pro/decor2.jpg";
 import pic4 from "../public/pro/decor3.jpg";
 import pic5 from "../public/decor3.jpg";
 
-function decors() {
+function Decors() {
   return (
     <div className={fit.wrapper}>
       <header className={fit.header}>
@@ -53,4 +53,4 @@ function decors() {
   );
 }
 
-export default decors;
+export default Decors;

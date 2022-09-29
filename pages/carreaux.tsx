@@ -4,7 +4,7 @@ import pic1 from "../public/pro/carreaux1.jpg";
 import pic2 from "../public/pro/carreaux2.jpg";
 import pic3 from "../public/pro/six.jpg";
 
-function carreaux() {
+function Carreaux() {
   return (
     <div className={fit.wrapper}>
       <header className={fit.header}>
@@ -41,4 +41,4 @@ function carreaux() {
   );
 }
 
-export default carreaux;
+export default Carreaux;

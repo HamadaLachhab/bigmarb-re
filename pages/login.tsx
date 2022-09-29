@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import loginStyle from "../styles/login.module.css";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
-function login() {
+function Login() {
   const router = useRouter();
   const { locale, defaultLocale, locales, pathname, query, asPath } = router;
   const [loading, setLoading] = useState(true);
@@ -102,4 +102,4 @@ function login() {
     );
 }
 
-export default login;
+export default Login;

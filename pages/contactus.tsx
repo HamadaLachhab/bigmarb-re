@@ -3,7 +3,7 @@ import Contact from "../components/Contact";
 import Image from "next/image";
 import map from "../public/map.jpg";
 
-function contactus() {
+function Contactus() {
   const router = useRouter();
   const { locale, defaultLocale, locales, pathname, query, asPath } = router;
   return (
@@ -52,4 +52,4 @@ function contactus() {
   );
 }
 
-export default contactus;
+export default Contactus;

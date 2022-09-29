@@ -3,7 +3,7 @@ import Image from "next/image";
 import pic1 from "../public/pro/bloc.jpg";
 import pic2 from "../public/pro/bloc2.jpg";
 import pic3 from "../public/pro/bloc3.jpg";
-function bloc() {
+function Bloc() {
   return (
     <div className={fit.wrapper}>
       <section>
@@ -38,4 +38,4 @@ function bloc() {
   );
 }
 
-export default bloc;
+export default Bloc;

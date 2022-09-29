@@ -22,7 +22,7 @@ export async function getServerSideProps() {
   };
 }
 
-function products({ product }: any) {
+function Products({ product }: any) {
   const router = useRouter();
   const { locale, defaultLocale, locales, pathname, query, asPath } = router;
   const [filtered, setFiltered] = useState(product);
@@ -113,4 +113,4 @@ function products({ product }: any) {
   );
 }
 
-export default products;
+export default Products;

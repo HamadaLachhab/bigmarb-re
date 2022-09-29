@@ -5,7 +5,7 @@ import pic4 from "../public/bain2.jpg";
 import pic5 from "../public/bain3.jpg";
 import pic6 from "../public/cuisine1.jpg";
 import fit from "../styles/fit.module.css";
-function customfit() {
+function Customfit() {
   return (
     <>
       <div className={fit.wrapper}>
@@ -76,4 +76,4 @@ function customfit() {
   );
 }
 
-export default customfit;
+export default Customfit;

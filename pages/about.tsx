@@ -4,7 +4,7 @@ import Image1 from "../public/pro/five.jpg";
 import Image2 from "../public/variety.jpg";
 import Image3 from "../public/pro/bloc2.jpg";
 import { FaCheck, FaMale, FaGlobe } from "react-icons/fa";
-function about() {
+function About() {
   const router = useRouter();
   const { locale, defaultLocale, locales, pathname, query, asPath } = router;
 
@@ -140,4 +140,4 @@ function about() {
   );
 }
 
-export default about;
+export default About;

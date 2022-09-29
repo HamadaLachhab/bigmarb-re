@@ -169,7 +169,7 @@ const Footer = () => {
       </div>
 
       <div className="py- container mx-auto flex flex-row justify-between">
-        <p>Copyright&copy; BigrMarbre</p>
+        <p>Copyright BigrMarbre</p>
         <div className="flex flex-row space-x-3">
           <FaFacebook className="w-5 h-5 text-gray-500" />
           <FaInstagram className="w-5 h-5 text-gray-500" />
