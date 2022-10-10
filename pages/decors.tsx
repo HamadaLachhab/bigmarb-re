@@ -24,28 +24,28 @@ function Decors() {
           </div>
           <div className={fit.relative}>
             {" "}
-            <Image src={pic1} layout="fill" objectFit="cover" />
+            <Image src={pic1} alt={"decors"} layout="fill" objectFit="cover" />
           </div>
         </div>
 
         <div className={fit.tranche1}>
           <div className={fit.relative}>
             {" "}
-            <Image src={pic2} layout="fill" objectFit="cover" />
+            <Image src={pic2} alt={"decors"} layout="fill" objectFit="cover" />
           </div>
           <div className={fit.relative}>
             {" "}
-            <Image src={pic3} layout="fill" objectFit="cover" />
+            <Image src={pic3} alt={"decors"} layout="fill" objectFit="cover" />
           </div>
         </div>
         <div className={fit.tranche1}>
           <div className={fit.relative}>
             {" "}
-            <Image src={pic4} layout="fill" objectFit="cover" />
+            <Image src={pic4} alt={"decors"} layout="fill" objectFit="cover" />
           </div>
           <div className={fit.relative}>
             {" "}
-            <Image src={pic5} layout="fill" objectFit="cover" />
+            <Image src={pic5} alt={"decors"} layout="fill" objectFit="cover" />
           </div>
         </div>
       </section>

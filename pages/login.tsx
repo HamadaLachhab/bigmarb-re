@@ -15,7 +15,7 @@ function Login() {
       }
       setLoading(false);
     });
-  }, []);
+  }, [router]);
 
   const [error, setError] = useState(false);
   const [email, setEmail] = useState("");

@@ -31,13 +31,23 @@ function Customfit() {
             </div>
             <div className={fit.relative}>
               {" "}
-              <Image src={pic1} layout="fill" objectFit="cover" />
+              <Image
+                src={pic1}
+                alt={"custom fit "}
+                layout="fill"
+                objectFit="cover"
+              />
             </div>
           </div>
           <div className={fit.tranche1}>
             <div className={fit.relative}>
               {" "}
-              <Image src={pic2} layout="fill" objectFit="cover" />
+              <Image
+                src={pic2}
+                alt={"custom fit "}
+                layout="fill"
+                objectFit="cover"
+              />
             </div>
             <div className={fit.tranche1main}>
               <h1> LA DÉCOUPE SUR MESURE</h1>
@@ -57,17 +67,32 @@ function Customfit() {
             </div>
             <div className={fit.relative}>
               {" "}
-              <Image src={pic4} layout="fill" objectFit="cover" />
+              <Image
+                src={pic4}
+                alt={"custom fit "}
+                layout="fill"
+                objectFit="cover"
+              />
             </div>
           </div>
           <div className={fit.tranche1}>
             <div className={fit.relative}>
               {" "}
-              <Image src={pic5} layout="fill" objectFit="cover" />
+              <Image
+                src={pic5}
+                alt={"custom fit "}
+                layout="fill"
+                objectFit="cover"
+              />
             </div>
             <div className={fit.relative}>
               {" "}
-              <Image src={pic6} layout="fill" objectFit="cover" />
+              <Image
+                src={pic6}
+                alt={"custom fit "}
+                layout="fill"
+                objectFit="cover"
+              />
             </div>
           </div>
         </section>
