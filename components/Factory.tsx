@@ -18,7 +18,12 @@ const Factory = () => {
           </Link>
         </div>
         <div className="container px-12  lg:grid lg:grid-cols-4 lg:grid-rows-2 gap-4  lg:space-y-0 space-y-2 w-full">
-          <div className="col-span-2 row-span-1  bg-[url('../public/factory1.jpg')] bg-no-repeat bg-cover bg-center  h-64">
+          <div
+            className="col-span-2 row-span-1   bg-no-repeat bg-cover bg-center  h-64"
+            style={{
+              backgroundImage: `url(/factory1.jpg)`,
+            }}
+          >
             <div className="bg-black  hover:bg-opacity-5 bg-opacity-30 w-full h-full  flex items-end justify-start">
               <p className="text-white text-2xl font-medium p-8">
                 {locale === "fr"
@@ -27,14 +32,24 @@ const Factory = () => {
               </p>
             </div>
           </div>
-          <div className="col-span-2 row-span-1 bg-[url('../public/factory2.jpg')] bg-no-repeat bg-cover bg-center  h-64">
+          <div
+            className="col-span-2 row-span-1  bg-no-repeat bg-cover bg-center  h-64"
+            style={{
+              backgroundImage: `url(/factory2.jpg)`,
+            }}
+          >
             <div className="bg-black  hover:bg-opacity-5 bg-opacity-30 w-full h-full  flex items-end justify-start">
               <p className="text-white text-2xl font-medium p-8">
                 {locale === "fr" ? "Transport  national" : " transportation"}
               </p>
             </div>
           </div>
-          <div className="col-span-2 row-span-1 bg-[url('../public/factory3.jpg')] bg-no-repeat bg-cover bg-center  h-64">
+          <div
+            className="col-span-2 row-span-1  bg-no-repeat bg-cover bg-center  h-64"
+            style={{
+              backgroundImage: `url(/factory3.jpg)`,
+            }}
+          >
             <div className="bg-black  hover:bg-opacity-5 bg-opacity-30 w-full h-full  flex items-end justify-start">
               <p className="text-white text-2xl font-medium p-8">
                 {locale === "fr"
@@ -43,14 +58,24 @@ const Factory = () => {
               </p>
             </div>
           </div>
-          <div className="col-span-1 row-span-1  bg-[url('../public/pro/decor3.jpg')] bg-no-repeat bg-cover bg-center  h-64">
+          <div
+            className="col-span-1 row-span-1    bg-no-repeat bg-cover bg-center  h-64"
+            style={{
+              backgroundImage: `url(/pro/decor3.jpg)`,
+            }}
+          >
             <div className="bg-black  hover:bg-opacity-5 bg-opacity-30 w-full h-full  flex items-end justify-start">
               <p className="text-white text-2xl font-medium p-8">
                 {locale === "fr" ? "Décors" : "Decors"}
               </p>
             </div>
           </div>
-          <div className="col-span-1 row-span-1 bg-[url('../public/pro/decor4.jpg')]  bg-no-repeat bg-cover bg-center  h-64">
+          <div
+            className="col-span-1 row-span-1   bg-no-repeat bg-cover bg-center  h-64"
+            style={{
+              backgroundImage: `url(/pro/decor4.jpg)`,
+            }}
+          >
             <div className="bg-black  hover:bg-opacity-5 bg-opacity-30 w-full h-full  flex items-center justify-center">
               <p className="text-white text-2xl font-medium p-8 cursor-pointer">
                 <Link href="/decors">

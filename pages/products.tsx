@@ -59,7 +59,7 @@ function Products({ product }: any) {
             const tempfiltered = product.filter(
               (p: any) => p.type === "granite"
             );
-            console.log(tempfiltered);
+
             setFiltered(tempfiltered);
           }}
         >

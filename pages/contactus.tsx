@@ -8,7 +8,12 @@ function Contactus() {
   const { locale, defaultLocale, locales, pathname, query, asPath } = router;
   return (
     <div>
-      <div className=" bg-[url('../public/pro/five.jpg')] bg-no-repeat bg-cover bg-center  h-72">
+      <div
+        className="   bg-no-repeat bg-cover bg-center  h-72"
+        style={{
+          backgroundImage: `url(/pro/five.jpg)`,
+        }}
+      >
         <div className="bg-black   bg-opacity-50 w-full h-full  flex items-center justify-center">
           <p className="text-white text-5xl font-light  p-8">
             {locale === "fr" ? "Contactez-nous" : "Contact us"}

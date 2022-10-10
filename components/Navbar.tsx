@@ -35,7 +35,7 @@ function Navbar() {
           toggled={isOpen}
           toggle={() => {
             setOpen(() => !isOpen);
-            console.log(isOpen);
+            
           }}
         />
       </button>

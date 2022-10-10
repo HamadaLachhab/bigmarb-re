@@ -12,7 +12,12 @@ function About() {
     <div>
       {/* Content */}
       <div>
-        <div className=" bg-[url('../public/pro/seven.jpg')] bg-no-repeat bg-cover bg-center  h-72">
+        <div
+          className="   bg-no-repeat bg-cover bg-center  h-72"
+          style={{
+            backgroundImage: `url(/pro/seven.jpg)`,
+          }}
+        >
           <div className="bg-black   bg-opacity-50 w-full h-full  flex items-center justify-center">
             <p className="text-white text-5xl font-light max-w-full  w-full p-8">
               {locale === "fr" ? "Présentation" : "About Us"}

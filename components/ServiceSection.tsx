@@ -12,7 +12,12 @@ const ServiceSection = () => {
   const { locale, defaultLocale, locales, pathname, query, asPath } = router;
 
   return (
-    <div className=" mx-auto lg:grid lg:grid-cols-8 gap-6 py-24 px-14 items-center place-content-center justify-center bg-[url('../public/background.webp')] bg-no-repeat bg-cover bg-center">
+    <div
+      className=" mx-auto lg:grid lg:grid-cols-8 gap-6 py-24 px-14 items-center place-content-center justify-center bg-no-repeat bg-cover bg-center"
+      style={{
+        backgroundImage: `url(/background.webp)`,
+      }}
+    >
       <Link href="/customfit">
         <div className="col-span-2 flex flex-col space-y-4 items-center justify-center text-center cursor-pointer">
           <FaDrawPolygon className="w-16 h-16 text-red-600 bg-gray-100   p-1" />

@@ -29,7 +29,12 @@ function Contact() {
   }
 
   return (
-    <div className=" w-full  flex flex-col items-center justify-center  space-y-4 py-24 bg-[url('../public/bg.jpg')] bg-no-repeat bg-cover bg-center">
+    <div
+      className=" w-full  flex flex-col items-center justify-center  space-y-4 py-24  bg-no-repeat bg-cover bg-center"
+      style={{
+        backgroundImage: `url(/bg.jpg)`,
+      }}
+    >
       <p className=" mx-auto text-3xl text-center font-light text-gray-600 w-11/12">
         {locale === "fr"
           ? "POUR NOUS CONTACTER PAR E-MAIL, REMPLISSEZ"

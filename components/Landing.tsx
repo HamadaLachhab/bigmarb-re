@@ -5,6 +5,8 @@ import { useRouter } from "next/router";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
+import Image from "next/future/image";
+import img1 from "../public/pro/five.jpg";
 function Landing() {
   const router = useRouter();
   const { locale, defaultLocale, locales, pathname, query, asPath } = router;
@@ -22,7 +24,12 @@ function Landing() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className=" h-screen bg-[url('../public/pro/five.jpg')] bg-no-repeat bg-cover bg-center">
+          <div
+            className=" h-screen  bg-no-repeat bg-cover bg-center"
+            style={{
+              backgroundImage: `url(/pro/five.jpg)`,
+            }}
+          >
             <div className="h-screen bg-black bg-opacity-10 ">
               <div className="h-screen flex flex-col justify-center items-center space-y-6 w-full">
                 <p className="text-6xl text-black text-center max-w-full ">
@@ -60,7 +67,12 @@ function Landing() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="h-screen bg-[url('../public/pro/decor1.jpg')] bg-no-repeat bg-cover bg-center">
+          <div
+            className="h-screen  bg-no-repeat bg-cover bg-center"
+            style={{
+              backgroundImage: `url(/pro/decor1.jpg)`,
+            }}
+          >
             {" "}
             <div className="h-screen bg-black bg-opacity-10 ">
               <div className="h-screen flex flex-col justify-center items-center space-y-6">
@@ -99,7 +111,12 @@ function Landing() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="h-screen bg-[url('../public/pro/tree.jpg')] bg-no-repeat bg-cover bg-center">
+          <div
+            className="h-screen bg-[url('../public/pro/tree.jpg')] bg-no-repeat bg-cover bg-center"
+            style={{
+              backgroundImage: `url(/pro/tree.jpg)`,
+            }}
+          >
             {" "}
             <div className="h-screen bg-black bg-opacity-10 ">
               <div className="h-screen flex flex-col justify-center items-center space-y-6">
